@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Fonte*/
+    --Fonte-Poppins: 'Poppins', sans-serif;
+    /*Cores*/
+        /*Background*/
+        --bg: #171717;
+        /*Padrão*/
+        --white: #FFF;
+        /*Shadow - box and text*/
+        --black-shadow: #00000030;
+        /*Linkedin*/
+        --linkedin: #0E76A8;
+        /*Github*/
+        --github: #24292F;
+        /*Behance*/
+        --behance: #003ECB;
+        /*Telegram*/
+        --telegram:#0060C0;
+        /*Email*/
+        --email: #00A94B;
+        /*Instagram*/
+        --instagram: #DC2743;
+        /*Twitter*/
+        --twitter: #1D9BF0;
+        /*Scroll*/
+        --scroll: #A044FF;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62%;
+}
+
+* {
+    scrollbar-width: none;
+    scrollbar-color: var(--scroll) var(--bg);
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #a044ff;
+    border-radius: 4px;
+    border: 0px none var(--white);
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: var(--bg);
+    font-family: var(--Fonte-Poppins);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box__shadow {
+    box-shadow: 0px 8px 8px var(--black-shadow);
+}
+
+.text__shadow {
+    text-shadow: 0px 8px 8px var(--black-shadow);
+}
+
+.full__header {
+    width: 720px;
+    height: auto;
+    padding: 100px 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.header__figure {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+}
+
+.header__figure-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.header__h1-title {
+    width: 225px;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+
+.header__p {
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+.full__main {
+    height: auto;
+    padding: 0px 50px 50px;
+}
+
+.main__section, .article__bio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio__ol {
+    width: 620px;
+}
+
+.bio__div {
+    display: flex;
+    flex-direction: column;
+}
+
+.bio__div-margin {
+    margin-bottom: 20px;
+}
+
+.bio__div-h2 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.bio__div-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.bio__div__item-li {
+    width: 300px;
+    height: 100px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio__div__item-anchor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.bio__div__item-img-icon {
+    width: 32px;
+    margin-right: 10px;
+}
+
+.item__github {
+    background-color: var(--github);
+}
+
+.item__linkedin {
+    background-color: var(--linkedin);
+}
+
+.item__behance {
+    background-color: var(--behance);
+}
+
+.item__email {
+    width: 620px;
+    background-color: var(--email);
+}
+
+.item__telegram {
+    background-color: var(--telegram);
+}
+
+.item__instagram {
+    background-color: var(--instagram);
+}
+
+.item__twitter {
+    background-color: var(--twitter);
+}
+
+.full__footer {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer__p {
+    font-size: 1.4rem;
+    font-weight: 200;
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 730px) {
+    .full__header {
+        width: 650px;
+    }
+    .bio__ol {
+        width: 550px;
+    }
+    .bio__div__item-li {
+        width: 265px;
+    }
+    .item__email {
+        width: 550px;
+    }
+}
+
+@media (max-width: 660px) {
+    .full__header {
+        width: 600px;
+    }
+    .header__figure {
+        width: 160px;
+        height: 160px;
+    }
+    .bio__ol {
+        width: 500px;
+    }
+    .bio__div__item-li {
+        width: 240px;
+    }
+    .item__email {
+        width: 500px;
+    }
+}
+
+@media (max-width: 610px) {
+    .full__header {
+        width: 550px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .header__figure {
+        width: 180px;
+        height: 180px;
+    }
+    .header__h1-title, .header__p {
+        width: 100%;
+    }
+    .bio__ol {
+        width: 450px;
+    }
+    .bio__div__item-li {
+        width: 215px;
+    }
+    .item__email {
+        width: 450px;
+    }
+}
+
+@media (max-width: 560px) {
+    .full__header {
+        width: 500px;
+    }
+    .bio__ol {
+        width: 400px;
+    }
+    .bio__div__item-li {
+        width: 400px;
+    }
+    .bio__div-h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 510px) {
+    .full__header {
+        width: 450px;
+    }
+    .bio__ol {
+        width: 350px;
+    }
+    .bio__div__item-li {
+        width: 350px;
+    }
+}
+
+@media (max-width: 460px) {
+    .full__header {
+        width: 400px;
+    }
+    .bio__ol {
+        width: 300px;
+    }
+    .bio__div__item-li {
+        width: 300px;
+    }
+}
+
+@media (max-width: 410px) {
+    .full__header {
+        width: 350px;
+    }
+    .bio__ol {
+        width: 250px;
+    }
+    .bio__div__item-li {
+        width: 250px;
+    }
+}
+
+@media (max-width: 360px) {
+    .full__header {
+        width: 300px;
+    }
+    .header__h1-title {
+        font-size: 3rem;
+        line-height: 40px;
+    }
+    .header__p {
+        font-size: 1.5rem;
+    }
+    .bio__ol {
+        width: 200px;
+    }
+    .bio__div__item-li {
+        width: 200px;
+    }
+    .bio__div-h2 {
+        font-size: 2rem;
+    }
+    .bio__div__item-anchor {
+        font-size: 1.6rem;
+    }
+    .bio__div__item-img-icon {
+        width: 28px;
+    }
+}
+
+@media (max-width: 310px) {
+    .full__header {
+        width: 270px;
+    }
+    .header__figure {
+        width: 160px;
+        height: 160px;
+    }
+    .bio__ol {
+        width: 170px;
+    }
+    .bio__div__item-li {
+        width: 170px;
+    }
+    .footer__p {
+        font-size: 1rem;
+    }
+}
