@@ -6,6 +6,8 @@
     text-decoration: none;
     user-select: none;
     box-sizing: border-box;
+    scrollbar-width: none;
+    scrollbar-color: var(--scroll) var(--bg);
 }
 
 :root {
@@ -39,11 +41,6 @@
 html {
     scroll-behavior: smooth;
     font-size: 62%;
-}
-
-* {
-    scrollbar-width: none;
-    scrollbar-color: var(--scroll) var(--bg);
 }
 
 *::-webkit-scrollbar {
