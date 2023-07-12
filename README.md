@@ -1,5 +1,6 @@
 <h1 align="center">Bio Link's</h1>
 <p align="center">Tudo o que você é, em apenas um lugar.</p>
+<img src="assets/img/bio-links.png">
 <p align="center">
   Para ver o projeto, <a href="https://bio-alcamarano.vercel.app/" target="_blank" rel="external">clique aqui</a>.
 </p>
