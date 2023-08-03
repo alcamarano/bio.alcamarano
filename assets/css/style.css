@@ -19,8 +19,8 @@
     --github: #24292F;
     --behance: #003ECB;
     --email: #00A94B;
-    --instagram: #DC2743;
-    --twitter: #1D9BF0;
+    --portfolio: #DC2743;
+    --telegram: #3390EC;
 }
 
 html {
@@ -152,8 +152,11 @@ html {
 }
 
 .btn__ol-li img {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .linkedin {
@@ -172,12 +175,12 @@ html {
     background-color: var(--email);
 }
 
-.instagram {
-    background-color: var(--instagram);
+.portfolio {
+    background-color: var(--portfolio);
 }
 
-.twitter {
-    background-color: var(--twitter);
+.telegram {
+    background-color: var(--telegram);
 }
 
 .art__footer {
