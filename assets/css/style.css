@@ -21,6 +21,8 @@
     --email: #00A94B;
     --portfolio: #DC2743;
     --telegram: #3390EC;
+    --instagram: #F703C2;
+    --tiktok: #38b9b5;
 }
 
 html {
@@ -181,6 +183,14 @@ html {
 
 .telegram {
     background-color: var(--telegram);
+}
+
+.instagram {
+    background-color: var(--instagram);
+}
+
+.tiktok {
+    background-color: var(--tiktok);
 }
 
 .art__footer {
